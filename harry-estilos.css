@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.cont2 {
+    display: grid;
+    padding: 10px;
+    grid-gap: 5px;
+    background-color: aqua;
+    font-size: 25px;
+    text-align: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
+    grid-template-areas: "hd hd hd"
+    "sd1 mn sd2"
+    "ft ft ft";
+}
+
+.cont2 .hd {
+    grid-column: hd;
+    background-color: blueviolet;
+}
+.cont2 .sd1 {
+    grid-column: sd1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    background-color: gray;
+    padding: 20px;
+    grid-gap: 5px;
+}
+.cont2 .sd1 .s1 {
+    background-color: darkgoldenrod;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.cont2 .sd1 .s2 {
+    background-color: yellow;
+    font-size: 25px;
+    color: red;
+}
+.cont2 > .mn {
+    grid-column: mn;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 5fr 1fr;
+    background-color: white;
+    padding: 50px;
+    grid-gap: 20px;
+}
+.cont2 .mn .t1 {
+    background-color: blueviolet;
+    color: aquamarine;
+}
+.cont2 .mn .t2 {
+    background-color: darksalmon;
+    color: crimson;
+}
+.cont2 .mn .t3 {
+    background-color: indigo;
+    color: white;
+}
+.cont2 > .sd2 {
+    grid-column: sd2;
+    background-color: darkgray;
+}
+.cont2 > .ft {
+    grid-column: ft;
+    background-color: blue;
+    color: bisque;
+}
